@@ -23,6 +23,14 @@ public class BillProduct {
         id = product_id;
     }
 
+    public BillProduct(Integer product_id, String name, float price, int rep, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.rep = rep;
+        id = product_id;
+        this.quantity = quantity;
+    }
+
     public int getCode() {
         return this.rep;
     }
